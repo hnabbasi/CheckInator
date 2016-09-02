@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="30dp">
+        <ImageButton
+            android:id="@+id/btnScan"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/qr_code"
+            android:scaleType="fitCenter" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/resultPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topPanel"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/scanned_info"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/Results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/Info"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textIsSelectable="true"
+            android:editable="false" />
+    </RelativeLayout>
+</RelativeLayout>
