@@ -1,7 +1,6 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
-using ZXing;
 using ZXing.Mobile;
 
 namespace CheckInator
